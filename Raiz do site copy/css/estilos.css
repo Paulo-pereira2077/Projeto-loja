@@ -188,3 +188,19 @@ footer .container {
 .menu-opcoes a:active{
     color: #7CFC00;
 }
+
+.menu-departamentos li ul {
+    display: none;
+}
+
+.menu-departamentos li:hover ul{
+    display: block;
+}
+
+.menu-departamentos ul ul li{
+    background-color: #DCDCDC;
+}
+
+.menu-departamentos li li a:before{
+    content: '- ';
+}
