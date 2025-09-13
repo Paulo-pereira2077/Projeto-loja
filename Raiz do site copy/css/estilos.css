@@ -226,8 +226,8 @@ footer .container {
 .painel li:hover {
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 5px #333;
-    transition: box-shadow 0.7s;
-    transform: scale(1.2) rotate(-5deg);
+    transition: box-shadow 0.2s; //alterei de 7s pra 2s
+    transform: scale(1.2); //removi a inclinação da imagem 
 }
 
 .busca {
