@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout Mirror Fashion</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.css">    
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.css">
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="index.html">Mirror Fashion</a>
         <ul class="navbar-nav">
@@ -33,18 +32,19 @@
         <div class="container">
             <h1 class="display-4">Ótima escolha!</h1>
             <p class="lead">Obrigado por comprar na Mirror Fashion! Preencha seus dados para efetivar a compra.</p>
+
             <div class="container">
                 <div class="row">
+
                     <div class="col-md-4 col-xl-3">
                         <div class="card">
                             <div class="card-header">
-                                Sua compra
+                                <h2>Sua compra</h2>
                             </div>
-
                             <div class="card-body">
                                 <img src="/img/produtos/foto1-verde.png" alt="Fuzzy Cardigan" class="img-thumbnail">
                                 <dl>
-                                    <dt>Produtos</dt>
+                                    <dt>Produto</dt>
                                     <dd>Fuzzy Cardigan</dd>
                                     <dt>Cor</dt>
                                     <dd>Verde</dd>
@@ -53,37 +53,35 @@
                                     <dt>Preço</dt>
                                     <dd id="preco">R$ 129,90</dd>
                                 </dl>
+                            </div> <!-- fim .card-body -->
+                        </div> <!-- fim .card -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="qtd">Quantidade:</label>
+                                <input type="number" id="qtd" min="1" max="99" value="1" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="total">Total:</label>
+                                <output for="qtd preco" id="total" class="form-control">R$ 129,90</output>
                             </div>
                         </div>
-                    
-                        <div class="card-body">
-                        <div class="card-body">
-                            <label for="qtd">Quantidade:</label>
-                            <input type="number" id="qtd" min="1" max="99" value="1" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="total">Total:</label>
-                            <output for="qtd preco" id="total" class="form-control">R$ 129,90</output>
-                        </div>
-
+                        <script type="text/javascript" src="js/total.js"></script>
                     </div>
-
-                    <script type="text/javascript" src="js/total.js"></script>
-
                     </div>
-                    
 
                     <form class="col-md-8 col-xl-9">
                         <div class="row">
+
                             <fieldset class="col-lg-6">
-                                <legend>Dados Pessoais</legend>
+                                <legend>Dados pessoais</legend>
                                 <div class="form-group">
-                                    <label for="nome">Nome Completo</label>
+                                    <label for="nome">Nome completo</label>
                                     <input type="text" class="form-control" id="nome" name="nome" autofocus required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email</label>
-                                    <input type="text" class="form-control" id="email" name="email"
+                                    <input type="email" class="form-control" id="email" name="email"
                                         placeholder="email@exemplo.com">
                                 </div>
                                 <div class="form-group">
@@ -99,10 +97,8 @@
                                     </label>
                                 </div>
                             </fieldset>
-
-
                             <fieldset class="col-lg-6">
-                                <legend>Cartão de crédito:</legend>
+                                <legend>Cartão de crédito</legend>
                                 <div class="form-group">
                                     <label for="numero-cartao">Número - CVV</label>
                                     <input type="text" class="form-control" id="numero-cartao" name="numero-cartao">
@@ -117,16 +113,14 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="valida-cartao">Validade</label>
+                                    <label for="validade-cartao">Validade</label>
                                     <input type="month" class="form-control" id="validade-cartao"
                                         name="validade-cartao">
                                 </div>
-                            </fieldset>
+                            </fieldset> <button type="submit" class="btn btn-primary"><span
+                                    class="oi-thumb-up"></span>Confirmar Pedido</button>
+
                         </div>
-                        <button type="submit" class="btn btn-primary">
-                            <span class="oi-thumb-up"></span>
-                            Confirmar Pedido
-                        </button>
                     </form>
                 </div>
             </div>
